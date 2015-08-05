@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 颜海镜
+title: 笨鸟
 tagline: 专注Web前端
 ---
 {% include JB/setup %}
