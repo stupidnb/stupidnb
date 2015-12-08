@@ -69,7 +69,7 @@ tags : [javascript,js对象]
 
 
 
-function check(obj,ifon,fun,click){
+ function check(obj,ifon,fun,click){
 
              var sp = spgan(obj);
 
@@ -101,7 +101,7 @@ function check(obj,ifon,fun,click){
 
 
 
-function res(click){
+ function res(click){
 
             var status = true;
             username = document.getElementsByName('username')[0];
@@ -147,7 +147,6 @@ function res(click){
             return status;
         }
 
-```
 
 这儿的定义status是为了给服务端信息，为了更好的去写下面的东西。这儿就没多大的影响。
 好了一个简单的表单验证就写好了，当然这只是其中的一个思路。
