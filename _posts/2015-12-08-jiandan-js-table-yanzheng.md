@@ -6,8 +6,6 @@ category : other
 tags : [javascript,js对象]
 ---
 
-<title>js表单验证</title>
-
 *长话短说，刚开始的时候我让这个表单验证整的够呛，虽然用jquery写出来是比较容易，但是用js的面向对象的方法写出来有些吃力，知道后来我听到一句话，javascript里面一切皆是对象。
 
 
