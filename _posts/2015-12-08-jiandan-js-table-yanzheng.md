@@ -11,7 +11,7 @@ tags : [javascript,js对象]
 
 *说这么多我们就进入正题吧，首先我们写一个表单，就用注册吧，别急这个方法你也可以用在登陆上。
 
-```html
+```
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
@@ -54,7 +54,7 @@ tags : [javascript,js对象]
 *当然我把样式也加里面了，下面就开始写javascript代码。
 *首先根据html表我们把提示单独放在一个span标签中，因此我们要将填写的信息与提示信息关联起来。
 
-```javascript
+```
 
  function spgan(cobj){
 
@@ -68,9 +68,10 @@ tags : [javascript,js对象]
 
 *这样就给我们一个返回值，发回的是span标签里面的东西，其实关系不大，但最好写上，接下来我们写一个方法真正操作表单验证的方法，我们定义为check();
 
-```javascript
+```
 
 function check(obj,ifon,fun,click){
+
              var sp = spgan(obj);
 
              obj.onfocus = function(){
@@ -97,11 +98,12 @@ function check(obj,ifon,fun,click){
 
 ```
 
-*上面这个方法中，传入四个参数，第一个为我们输入<input>的值，得到之后关联span标签，然后第二个参数为你要提示的值，第三个可以说是一个函数也可以说是一个回调函数。最后一个是点击事件。好了方法写好了最后一步就是实例化，即将每一个空当成一个对象就可以了。
+上面这个方法中，传入四个参数，第一个为我们输入input的值，得到之后关联span标签，然后第二个参数为你要提示的值，第三个可以说是一个函数也可以说是一个回调函数。最后一个是点击事件。好了方法写好了最后一步就是实例化，即将每一个空当成一个对象就可以了。
 
-```javascript
+```
 
 function res(click){
+
             var status = true;
             username = document.getElementsByName('username')[0];
             password = document.getElementsByName('password')[0];
@@ -148,5 +150,5 @@ function res(click){
 
 ```
 
-*这儿的定义status是为了给服务端信息，为了更好的去写下面的东西。这儿就没多大的影响。
+这儿的定义status是为了给服务端信息，为了更好的去写下面的东西。这儿就没多大的影响。
 好了一个简单的表单验证就写好了，当然这只是其中的一个思路。
