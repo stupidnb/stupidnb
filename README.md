@@ -1,2 +1,2 @@
-# stupidnb.github.io
+# stupidnb
 博客
